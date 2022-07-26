@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="436dp"
+        android:layout_marginEnd="284dp"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="436dp"
+        android:layout_marginEnd="68dp"
+        android:text="call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="196dp"
+        android:onClick="inputNumber"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="92dp"
+        android:text="9"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="196dp"
+        android:text="8"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="296dp"
+        android:text="7"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="92dp"
+        android:text="6"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="196dp"
+        android:text="5"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="296dp"
+        android:text="4"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="92dp"
+        android:text="3"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:text="CALL APPLICATION"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="158dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="47dp"
+        android:text="clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="299dp"
+        android:text="1"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="73dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:onClick="inputNumber"
+        android:layout_marginEnd="196dp"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+package com.example.l2;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, dot, equal, div, multiply, sub, add, clear;
+    private EditText resDisplay;
+    private float num1, num2;
+    private boolean addition, subtraction, multiplication, division;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn0 = findViewById(R.id.btn0);
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
+        btn9 = findViewById(R.id.btn9);
+        dot = findViewById(R.id.dot);
+        equal = findViewById(R.id.equal);
+        div = findViewById(R.id.div);
+        add = findViewById(R.id.add);
+        sub = findViewById(R.id.sub);
+        multiply = findViewById(R.id.multiply);
+        clear = findViewById(R.id.clear);
+
+        resDisplay = findViewById(R.id.resDisplay);
+
+        btn0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "0");
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "1");
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "2");
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "3");
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "4");
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "5");
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "6");
+            }
+        });
+
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "7");
+            }
+        });
+
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "8");
+            }
+        });
+
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + "9");
+            }
+        });
+
+        dot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText(resDisplay.getText() + ".");
+            }
+        });
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1 = Float.parseFloat(resDisplay.getText()+"");
+                addition = true;
+                resDisplay.setText(null);
+            }
+        });
+
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1 = Float.parseFloat(resDisplay.getText()+"");
+                subtraction = true;
+                resDisplay.setText(null);
+            }
+        });
+
+        multiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1 = Float.parseFloat(resDisplay.getText()+"");
+                multiplication = true;
+                resDisplay.setText(null);
+            }
+        });
+
+        div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1 = Float.parseFloat(resDisplay.getText()+"");
+                division = true;
+                resDisplay.setText(null);
+            }
+        });
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resDisplay.setText("");
+            }
+        });
+
+        equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num2 = Float.parseFloat(resDisplay.getText()+"");
+
+                if(addition == true){
+                    resDisplay.setText(num1 + num2 + "");
+                    addition = false;
+                }
+
+                else if(subtraction == true){
+                    resDisplay.setText(num1 - num2 + "");
+                    subtraction = false;
+                }
+
+                else if (multiplication == true){
+                    resDisplay.setText(num1 * num2 + "");
+                    multiplication = false;
+                }
+
+                else if(division == true){
+                    resDisplay.setText(num1 / num2 + "");
+                    division = false;
+                }
+            }
+        });
+    }
+}
